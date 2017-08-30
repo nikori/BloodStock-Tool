@@ -1,0 +1,236 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:background="#e2b7b4" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            >
+
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Blood Stock Submission"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/tv4"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textAlignment="center"
+                android:text="Enter units below:"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/tv4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Units in:"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Enter units in"
+                android:ems="10"
+                android:textSize="13dp"
+                android:maxLength="3"
+                android:id="@+id/txtUnitsIn"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_alignEnd="@+id/textView4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Units Screened:"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/txtUnitsIn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/txtUnitsIn"
+                android:layout_alignEnd="@+id/txtUnitsIn" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="13dp"
+                android:ems="10"
+                android:maxLength="3"
+                android:hint="Enter Screened Units"
+                android:id="@+id/txtUnitsScreened"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Units Unscreened"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/textView6"
+                android:layout_below="@+id/txtUnitsScreened"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/txtUnitsScreened"
+                android:layout_alignEnd="@+id/txtUnitsScreened" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="13dp"
+                android:hint="Enter Unscreened Units"
+                android:ems="10"
+                android:maxLength="3"
+                android:id="@+id/txtUnscreenedUnits"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Units Sorted:"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/textView7"
+                android:layout_below="@+id/txtUnscreenedUnits"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/txtUnscreenedUnits"
+                android:layout_alignEnd="@+id/txtUnscreenedUnits" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="13dp"
+                android:ems="10"
+                android:maxLength="3"
+                android:hint="Enter Sorted Units"
+                android:id="@+id/txtUnitsSorted"
+                android:layout_below="@+id/textView7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/txtUnscreenedUnits"
+                android:layout_alignEnd="@+id/txtUnscreenedUnits" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Units Out:"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/textView8"
+                android:layout_below="@+id/txtUnitsSorted"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/txtUnitsSorted"
+                android:layout_alignEnd="@+id/txtUnitsSorted" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="13dp"
+                android:ems="10"
+                android:maxLength="3"
+                android:hint="Enter Units out"
+                android:id="@+id/txtUnitsOut"
+                android:layout_below="@+id/textView8"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/txtUnitsSorted"
+                android:layout_alignEnd="@+id/txtUnitsSorted" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facilty Code:"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:id="@+id/fcode"
+                android:layout_below="@+id/txtUnitsSorted"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/txtfcode"
+                android:layout_alignEnd="@+id/txtfcode" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="K0123456790"
+                android:inputType="textPhonetic|text|textCapWords"
+                android:ems="10"
+                android:textSize="13dp"
+                android:maxLength="4"
+                android:hint="Enter Facilty Code"
+                android:id="@+id/txtfacilitycode"
+                android:layout_below="@+id/textView8"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/facilitycode"
+                android:layout_alignEnd="@+id/facilitycode" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/btnSSubmit"
+                android:layout_marginTop="65dp"
+                android:layout_below="@+id/txtUnitsOut"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:drawableTop="@mipmap/ic_send"
+                android:paddingBottom="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="#FFFFFF"
+                android:paddingTop="3dp"
+                android:background="#ED0956"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
